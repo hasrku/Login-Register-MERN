@@ -24,7 +24,7 @@ const Login = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         axios
-            .post("http://localhost:5000/login", { username, password })
+            .post("https://login-register-mern-api-lemon.vercel.app/login", { username, password })
             .then((result) => {
                 if (result.data.status === "fail") {
                     showMessage(false);
