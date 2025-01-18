@@ -8,8 +8,7 @@ app.use(express.json());
 app.use(cors(
     {
         origin: ["https://login-register-mern.vercel.app"],
-        methods: ["POST", "GET"],
-        credentials: true,
+        methods: ["POST", "GET"]
     }
 ));
 const port = 5000;
