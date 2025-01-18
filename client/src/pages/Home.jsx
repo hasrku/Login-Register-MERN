@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { VscAccount } from "react-icons/vsc";
 import { LuNotebookPen } from "react-icons/lu";
+import { FaGithub } from "react-icons/fa6";
 
 const Home = () => {
     return (
@@ -25,6 +26,16 @@ const Home = () => {
                         <LuNotebookPen className="size-12 sm:size-16" />
                         <p>Sign Up</p>
                     </Link>
+                </div>
+                <div className=" absolute my-3 text-[#ffff] font-mono text-sm bottom-0 flex">
+                    <a
+                        href="https://github.com/hasrku"
+                        target="_blank"
+                        className=" flex"
+                    >
+                        <FaGithub fill="#ffff" size={20} />
+                        <span className="font-serif">&nbsp;@</span>hasrku
+                    </a>
                 </div>
             </div>
         </>
