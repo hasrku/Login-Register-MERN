@@ -1,5 +1,6 @@
 # Login Register 
-demo site with simple interface 
+ [demo](https://login-register-mern.vercel.app/) site
+ uses MERN stack 
 
 ## modules used
 ### frontend
