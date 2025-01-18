@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(
     cors({
         origin: "https://login-register-mern.vercel.app", 
-        methods: ["POST", "GET"],
+        methods: ["POST", "GET", "OPTIONS"],
         credentials: true,
     })
 );
@@ -18,6 +18,9 @@ mongoose
     .connect("mongodb+srv://jakilasti63:hello-123@testlogin.5hmca.mongodb.net/testlogin?retryWrites=true&w=majority&appName=TestLogin")
     .then(() => console.log("connected to database"))
     .catch((err) => console.log("database connection failed: ", err));
+
+
+app.options("*", cors()); // Allow all preflight requests
 
 // this is to render "server is running" text
 // when we visit "http://localhost:5000"
