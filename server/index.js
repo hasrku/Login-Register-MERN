@@ -14,7 +14,7 @@ app.use(
 );
 const port = 5000;
 
-const dbUrl = "mongodb+srv://jakilasti63:hello-123@testlogin.5hmca.mongodb.net/testlogin?retryWrites=true&w=majority&appName=TestLogin";
+const dbUrl = "mongodb+srv://newuser:newuser123@testlogin.5hmca.mongodb.net/testlogin?retryWrites=true&w=majority&appName=TestLogin";
 
 mongoose
     .connect(dbUrl , { useNewUrlParser: true, useUnifiedTopology: true })
