@@ -15,7 +15,7 @@ app.use(
 const port = 5000;
 
 mongoose
-    .connect("mongodb+srv://new-user:new-user@testlogin.5hmca.mongodb.net/testlogin?retryWrites=true&w=majority&appName=TestLogin")
+    .connect("mongodb+srv://jakilasti63:hello-123@testlogin.5hmca.mongodb.net/testlogin?retryWrites=true&w=majority&appName=TestLogin")
     .then(() => console.log("connected to database"))
     .catch((err) => console.log("database connection failed: ", err));
 
