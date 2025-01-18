@@ -14,8 +14,10 @@ app.use(
 );
 const port = 5000;
 
+const dbUrl = "mongodb+srv://jakilasti63:hello-123@testlogin.5hmca.mongodb.net/testlogin?retryWrites=true&w=majority&appName=TestLogin";
+
 mongoose
-    .connect("mongodb+srv://jakilasti63:hello-123@testlogin.5hmca.mongodb.net/testlogin?retryWrites=true&w=majority&appName=TestLogin")
+    .connect(dbUrl , { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log("connected to database"))
     .catch((err) => console.log("database connection failed: ", err));
 
