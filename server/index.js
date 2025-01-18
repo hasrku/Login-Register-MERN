@@ -5,11 +5,17 @@ const userModel = require("./models/user");
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+    {
+        origin: ["https://login-register-mern.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true,
+    }
+));
 const port = 5000;
 
 mongoose
-    .connect("mongodb://localhost:27017/testlogin")
+    .connect("mongodb+srv://new-user:new-user@testlogin.5hmca.mongodb.net/testlogin?retryWrites=true&w=majority&appName=TestLogin")
     .then(() => console.log("connected to database"))
     .catch((err) => console.log("database connection failed: ", err));
 
