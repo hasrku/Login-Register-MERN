@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus {
+        -webkit-box-shadow: 0 0 0 100px #284167 inset !important; /* Increased spread radius */
+        -webkit-text-fill-color: #ffffff !important;
+        background-clip: padding-box !important; /* Crucial for rounded corners */
+    }
+}
+
 @font-face {
     font-family: Roboto;
     src: url("assets/fonts/Roboto-Medium.ttf");
