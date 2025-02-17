@@ -14,7 +14,7 @@ app.use(
 );
 const port = 5000;
 
-const dbUrl = "mongodb+srv://newuser:newuser123@databases.5hmca.mongodb.net/test?retryWrites=true&w=majority&appName=databases";
+const dbUrl = import.meta.env.VITE_DB_URL;
 
 mongoose
     .connect(dbUrl)
