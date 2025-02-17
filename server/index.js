@@ -14,7 +14,7 @@ app.use(
 );
 const port = 5000;
 
-const dbUrl = import.meta.env.VITE_DB_URL;
+const dbUrl = import.meta.env.DB_URL;
 
 mongoose
     .connect(dbUrl)
